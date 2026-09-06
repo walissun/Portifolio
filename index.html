@@ -1,18 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">WALISSON R.</a>
-        
-        <nav>
-            <a href="#" class="start"></a>
-            <a href="#" class="Projetos"></a>
-        </nav>
-    </header>
+
+  <!-- CABEÇALHO COM BOTÃO DARK MODE -->
+  <header class="navbar">
+    <nav>
+      <a href="#sobre">SOBRE MIM</a>
+      <a href="#projetos">PROJETOS</a>
+      <a href="#extras">EXTRAS</a>
+    </nav>
+    <!-- Um pequeno script inline é a forma mais moderna e limpa de alternar classes no body -->
+    <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">
+      🌓 Alternar Tema
+    </button>
+  </header>
+
+  <!-- CONTAINER PRINCIPAL (GRID) -->
+  <main class="layout-container">
+    
+    <!-- LADO ESQUERDO: TEXTO -->
+    <section class="left-col">
+      <p class="bio-text">
+        Profissional com formação em Transporte Terrestre pela UFBA e graduando em Análise e Desenvolvimento de Sistemas. Experiência na área administrativa, buscando unir tecnologia, análise de dados e conhecimentos em planejamento urbano para criar soluções inovadoras e eficientes em mobilidade.
+      </p>
+    </section>
+
+    <!-- DIVISOR CENTRAL COM FOTO -->
+    <div class="center-divider">
+      <img src="./src/RE6_0881.jpg" alt="Foto de perfil" class="profile-avatar">
+    </div>
+
+    <!-- LADO DIREITO: CARDS -->
+    <section class="right-col">
+      
+      <!-- Card Tech -->
+      <div class="card tech-grid">
+        <span>Figma</span>
+        <span>JS</span>
+        <span>Angular</span>
+        <span>Google Script</span>
+        <span>R Estatística</span>
+        <span>Python</span>
+      </div>
+
+      <!-- Card Mobilidade -->
+      <div class="card mobility-list">
+        <ul>
+          <li>Planejamento de Tráfego e Mobilidade Urbana</li>
+          <li>Operação e Gestão do Transporte Público e de Cargas</li>
+          <li>Engenharia de Tráfego e Sinalização Viária</li>
+          <li>Segurança Viária e Legislação</li>
+          <li>Geotecnologias e Ferramentas de Suporte</li>
+          <li>Infraestrutura e Impacto Socioambiental</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
 </body>
 </html>
